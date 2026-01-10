@@ -5,15 +5,17 @@ import './App.css'
 import Header from './components/Header/Header'
 import Slider from './components/Slider/Slider'
 import Overlay from './components/Overlay/Overlay'
+import { useSelector } from 'react-redux'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const overlay = useSelector((state: any) => state.overlay)
 
   return (
     <>
       <Header />
       <Slider />
-      {/* <Overlay /> */}
+      {overlay.isOpen && <Overlay />}
     </>
   )
 }

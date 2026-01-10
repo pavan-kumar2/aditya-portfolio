@@ -1,14 +1,19 @@
 import React from "react";
 
 import "./Header.css";
+import { useDispatch } from "react-redux";
+import App from "../../App";
+import { openOverlay_as } from "../../features/overlay/overlaySlice"
 
 type Props = {};
 
 const Header = (props: Props) => {
     const [isFullscreen, setIsFullscreen] = React.useState(false);
 
+    const useAppDispatch = useDispatch()
+
     const openOverlay = (id: string) => () => {
-        // const overlay = document.getElementById(id)
+        useAppDispatch(openOverlay_as({ payload: id, type: "oveerlay/openOverlay_as" }))
     };
 
     const toggleFullscreen = () => {
@@ -25,9 +30,11 @@ const Header = (props: Props) => {
         <header className="ui-element">
             <div className="logo">Aditya Portfolio</div>
             <nav id="mainNav">
+                <a onClick={openOverlay("home")}>Home</a>
                 <a onClick={openOverlay("about")}>About</a>
                 <a onClick={openOverlay("testimonials")}>Testimonials</a>
                 <a onClick={openOverlay("contact")}>Contact</a>
+                <a onClick={openOverlay("gallery")}>Gallery</a>
 
                 <button onClick={toggleFullscreen}
                     className={`fullscreen-btn ${isFullscreen ? "active" : ""}`}

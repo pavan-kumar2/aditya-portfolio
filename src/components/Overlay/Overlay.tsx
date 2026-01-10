@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { use } from 'react'
+import { useDispatch } from 'react-redux'
+import { closeOverlay } from '../../features/overlay/overlaySlice';
 
 type Props = {}
 
 const Overlay = (props: Props) => {
 
-    const closeOverlay = (id: string) => () => {
-        const overlay = document.getElementById(id + 'Overlay')
+    const dispatch = useDispatch();
+
+    const closeOverlay_ = () => {
+        dispatch(closeOverlay())
     }
 
     return (
         <div className="overlay active" id="testimonialsOverlay">
             <div className="overlay-content">
-                <button className="close-btn" onClick={closeOverlay('testimonials')}>×</button>
+                <button className="close-btn" onClick={closeOverlay_}>×</button>
                 <h2>Testimonials</h2>
 
                 <div className="testimonial-card">
