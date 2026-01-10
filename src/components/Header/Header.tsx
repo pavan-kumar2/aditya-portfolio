@@ -2,12 +2,14 @@ import React from "react";
 
 import "./Header.css";
 import { useDispatch } from "react-redux";
-import App from "../../App";
+// import App from "../../App";
 import { openOverlay_as } from "../../features/overlay/overlaySlice"
 
-type Props = {};
+// type Props = {};
 
-const Header = (props: Props) => {
+
+// const Header = (props: Props) => {
+const Header = () => {
     const [isFullscreen, setIsFullscreen] = React.useState(false);
 
     const useAppDispatch = useDispatch()

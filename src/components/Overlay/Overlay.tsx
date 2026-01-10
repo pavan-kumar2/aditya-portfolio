@@ -1,10 +1,11 @@
-import React, { use } from 'react'
+// import React, { use } from 'react'
 import { useDispatch } from 'react-redux'
 import { closeOverlay } from '../../features/overlay/overlaySlice';
 
-type Props = {}
+// type Props = {}
 
-const Overlay = (props: Props) => {
+// const Overlay = (props: Props) => {
+const Overlay = () => {
 
     const dispatch = useDispatch();
 
