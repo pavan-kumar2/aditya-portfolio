@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import Slider from './components/Slider/Slider'
 import Overlay from './components/Overlay/Overlay'
 import { useSelector } from 'react-redux'
+import About from './components/About/About'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Header />
       <Slider />
+      <About />
       {overlay.isOpen && <Overlay />}
     </>
   )
