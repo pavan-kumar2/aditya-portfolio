@@ -1,5 +1,27 @@
-.floating-btn {
+.draggable-btn {
   position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #fff;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  z-index: 1000;
+}
+
+.draggable-btn:active {
+  cursor: grabbing;
+}
+
+.draggable-btn a {
   bottom: 20px;
   right: 20px;
   background-color: #25d366; /* WhatsApp green */
@@ -12,10 +34,9 @@
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  z-index: 1000;
 }
 
-.floating-btn img {
+.draggable-btn img {
   width: 30px;
   height: 30px;
 }
