@@ -3,21 +3,32 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header/Header'
-import Slider from './components/Slider/Slider'
-import Overlay from './components/Overlay/Overlay'
 import { useSelector } from 'react-redux'
-import About from './components/About/About'
+import FloatingBtn from './components/FloatingBtn/FloatingBtn'
+import { Route, Routes } from 'react-router-dom'
+import Gallery from './pages/Gallery/Gallery'
+import MainLayoutWrapper from './pages/MainLayoutWrapper/MainLayoutWrapper'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
-  const overlay = useSelector((state: any) => state.overlay)
+  // const overlay = useSelector((state: any) => state.overlay)
 
   return (
     <>
+      {/* {overlay.isOpen && <Overlay />} */}
       <Header />
-      <Slider />
-      <About />
-      {overlay.isOpen && <Overlay />}
+      <FloatingBtn />
+      <main>
+        <Routes>
+          <Route path='/' element={
+            <MainLayoutWrapper></MainLayoutWrapper>
+          }>
+          </Route>
+          <Route path='/gallery' element={<Gallery />}></Route>
+        </Routes>
+      </main>
+      <Footer />
     </>
   )
 }
