@@ -2,13 +2,13 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Header/Header'
+import Header from './layouts/Header/Header'
 import { useSelector } from 'react-redux'
 import FloatingBtn from './components/FloatingBtn/FloatingBtn'
 import { Route, Routes } from 'react-router-dom'
 import Gallery from './pages/Gallery/Gallery'
 import MainLayoutWrapper from './pages/MainLayoutWrapper/MainLayoutWrapper'
-import Footer from './components/Footer/Footer'
+import Footer from './layouts/About/Footer/Footer'
 
 function App() {
 
