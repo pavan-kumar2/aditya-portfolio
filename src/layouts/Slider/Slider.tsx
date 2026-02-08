@@ -5,6 +5,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Slider.css";
 
+import { images } from "../../utils/image";
+
 // ✅ Correct Vite image import
 import forest from "../../assets/images/forest-whispers.jpg";
 
@@ -16,11 +18,11 @@ const Slider = () => {
         <div className="slider-wrapper">
             {/* Custom navigation buttons */}
             <button ref={prevRef} className="nav-btn prev">
-                ◀
+                <img src={images.angleLeftIcon} alt="Previous" />
             </button>
 
             <button ref={nextRef} className="nav-btn next">
-                ▶
+                <img src={images.angleRightIcon} alt="Next" />
             </button>
 
             <Swiper
