@@ -6,7 +6,7 @@ const About = () => {
     const contactInfo = [
         { label: 'Email', value: 'aditya@photography.com', icon: '✉️', href: 'mailto:aditya@photography.com' },
         { label: 'Phone', value: '+91 98765 43210', icon: '📱', href: 'tel:+919876543210' },
-        { label: 'Location', value: 'India', icon: '📍' },
+        // { label: 'Location', value: 'India', icon: '📍' },
     ];
 
     const socialLinks = [
@@ -45,26 +45,27 @@ const About = () => {
                             </div>
                         ))}
                     </div>
+                    <div className='social-section'>
+                        {/* <h3>Follow Me</h3> */}
+                        <ul className='social-link'>
+                            {socialLinks.map((social, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        title={social.name}
+                                        className='social-icon-link'
+                                    >
+                                        <img src={social.icon} alt={social.name} />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
 
-                <div className='social-section'>
-                    <h3>Follow Me</h3>
-                    <ul className='social-link'>
-                        {socialLinks.map((social, index) => (
-                            <li key={index}>
-                                <a
-                                    href={social.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    title={social.name}
-                                    className='social-icon-link'
-                                >
-                                    <img src={social.icon} alt={social.name} />
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+
             </div>
         </section>
     );
