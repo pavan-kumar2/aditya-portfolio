@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom'
 import Gallery from './pages/Gallery/Gallery'
 import MainLayoutWrapper from './pages/MainLayoutWrapper/MainLayoutWrapper'
 import Footer from './layouts/Footer/Footer'
+import GalleryView from './pages/GalleryView/GalleryView'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           }>
           </Route>
           <Route path='/gallery' element={<Gallery />}></Route>
+          <Route path='/gallery/:id/view' element={<GalleryView />} />
         </Routes>
       </main>
       <Footer />
