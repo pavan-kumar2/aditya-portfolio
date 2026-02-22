@@ -1,4 +1,5 @@
-import React from 'react'
+
+import { useNavigate } from 'react-router-dom'
 import './Gallery.css'
 import forest from "../../assets/images/forest-whispers.jpg";
 
@@ -11,6 +12,7 @@ interface GalleryCard {
 type Props = {}
 
 const Gallery = (props: Props) => {
+    const navigate = useNavigate();
     const galleryCards: GalleryCard[] = [
         { id: 1, image: forest, eventName: "Forest Whispers" },
         { id: 2, image: forest, eventName: "Mountain Adventure" },
@@ -26,7 +28,7 @@ const Gallery = (props: Props) => {
             <h2 className='gallery-title'>Gallery</h2>
             <div className='gallery-grid'>
                 {galleryCards.map((card) => (
-                    <div key={card.id} className="gallery-card">
+                    <div key={card.id} className="gallery-card" onClick={() => navigate(`/gallery/${card.id}/view`)}>
                         <div className="card-image-wrapper">
                             <img src={card.image} alt={card.eventName} className="card-image" />
                             <div className="card-overlay"></div>
@@ -37,6 +39,8 @@ const Gallery = (props: Props) => {
                     </div>
                 ))}
             </div>
+
+
         </div>
     )
 }
