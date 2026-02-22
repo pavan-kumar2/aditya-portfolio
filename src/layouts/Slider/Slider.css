@@ -1,10 +1,14 @@
+.hero-section {
+  /* height: 100dvh; */
+}
+
 .slider-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.swiper .swiper-wrapper {
+.hero-section .swiper .swiper-wrapper {
   height: 100dvh;
 }
 
