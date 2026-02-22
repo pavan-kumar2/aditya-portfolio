@@ -1,7 +1,15 @@
 .testimonials-section {
   background-color: white;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+}
+
+.testimonials-section .slider-wrapper {
+  position: relative;
+}
+
+.testimonials-section .swiper {
+  overflow: visible;
 }
 
 .testimonials-section .title {
@@ -34,12 +42,13 @@
   background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
   padding: 35px;
   border-radius: 18px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border-left: 4px solid #e0e0e0;
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
 }
 
 .testimonial-card::before {
@@ -88,4 +97,38 @@
   content: "— ";
 
   color: #666666;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  box-shadow: rgb(164 164 164) 0px 0px 8px 0px;
+}
+
+.nav-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-btn.prev {
+  left: 20px;
+}
+
+.nav-btn.next {
+  right: 20px;
 }
