@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { images } from '../../../utils/image'
+import { images } from '../../utils/image'
 
 type Props = {}
 
