@@ -47,11 +47,11 @@ const Slider = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <img src={forest} alt="Slide 1" className="slider-img" />
+                        <img src={images.photoMarriage} alt="Slide 1" className="slider-img" />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={forest} alt="Slide 2" className="slider-img" />
+                        <img src={images.photoImage2} alt="Slide 2" className="slider-img" />
                     </SwiperSlide>
 
                     <SwiperSlide>
