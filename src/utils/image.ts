@@ -6,6 +6,9 @@ import whatsappLogo from '../assets/images/WhatsApp.svg.png';
 import instagramLogo from '../assets/images/Instagram_icon.png';
 import photoMarriage from '../assets/images/photo-marriage.jpg';
 import photoImage2 from '../assets/images/photo-image-2.jpg';
+import photoImage1 from '../assets/images/photo-image-1.jpg';
+// src\assets\images\photo-image-1.JPG
+
 
 export const images: Record<string, string> = {
     instagramWhiteIcon,
@@ -15,7 +18,8 @@ export const images: Record<string, string> = {
     whatsappLogo,
     instagramLogo,
     photoMarriage,
-    photoImage2
+    photoImage2,
+    photoImage1
 };
 
 
