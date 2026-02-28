@@ -5,7 +5,6 @@ type Props = {
     buttonClicked: () => void;
 }
 
-// type Props = {}
 const BuTTON_SIZE = 40;
 
 const HiddenBtn = () => {
