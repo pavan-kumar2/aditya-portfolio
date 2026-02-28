@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 const DRAG_THRESHOLD = 6;
 
-function useFloatingBtn(buttonSize: number = 60, actionMethod: () => void, y_cord: number = 50): {
+function useFloatingBtn(buttonSize: number = 40, actionMethod: () => void, y_cord: number = 50): {
     position: { x: number; y: number };
     isDragging: boolean;
     setupDrag: (clientX: number, clientY: number, moveEvent: string, endEvent: string) => void;
