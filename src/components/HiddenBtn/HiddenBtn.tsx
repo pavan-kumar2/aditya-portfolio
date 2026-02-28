@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import useFloatingBtn from '../../hooks/useFloatingBtn';
 
-type Props = {
-    buttonClicked: () => void;
-}
+// type Props = {
+//     buttonClicked: () => void;
+// }
 
 const BuTTON_SIZE = 40;
 

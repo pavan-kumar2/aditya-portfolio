@@ -4,7 +4,7 @@
 import './App.css'
 
 import Header from './layouts/Header/Header'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 import { Route, Routes } from 'react-router-dom'
 import Gallery from './pages/Gallery/Gallery'
 import MainLayoutWrapper from './pages/MainLayoutWrapper/MainLayoutWrapper'

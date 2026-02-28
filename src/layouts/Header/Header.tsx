@@ -1,9 +1,9 @@
-import React from "react";
+
 
 import "./Header.css";
 import { useDispatch } from "react-redux";
 // import App from "../../App";
-import { openOverlay_as } from "../../features/overlay/overlaySlice"
+// import { openOverlay_as } from "../../features/overlay/overlaySlice"
 import { Link } from "react-router-dom";
 
 // type Props = {};
@@ -14,9 +14,9 @@ const Header = () => {
 
     const useAppDispatch = useDispatch()
 
-    const openOverlay = (id: string) => () => {
-        useAppDispatch(openOverlay_as({ payload: id, type: "oveerlay/openOverlay_as" }))
-    };
+    // const openOverlay = (id: string) => () => {
+    //     useAppDispatch(openOverlay_as({ payload: id, type: "oveerlay/openOverlay_as" }))
+    // };
 
 
     return (
