@@ -1,0 +1,28 @@
+.draggable-btn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  touch-action: none;
+  user-select: none;
+  padding: 0;
+  border: none;
+  pointer-events: auto;
+}
+
+.draggable-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.draggable-btn img {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  user-drag: none;
+}
