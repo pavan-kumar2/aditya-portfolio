@@ -25,22 +25,14 @@ const Gallery = (props: Props) => {
 
     return (
         <div className='gallery-container'>
-            <h2 className='gallery-title'>Gallery</h2>
-            <div className='gallery-grid'>
-                {galleryCards.map((card) => (
-                    <div key={card.id} className="gallery-card" onClick={() => navigate(`/gallery/${card.id}/view`)}>
-                        <div className="card-image-wrapper">
-                            <img src={card.image} alt={card.eventName} className="card-image" />
-                            <div className="card-overlay"></div>
-                        </div>
-                        <div className="card-content">
-                            <h3 className="event-name">{card.eventName}</h3>
-                        </div>
+            {galleryCards.map((card) => (
+                <div key={card.id} className="gallery-card" onClick={() => navigate(`/gallery/${card.id}/view`)}>
+                    <img src={card.image} alt={card.eventName} className="card-image" />
+                    <div className="card-content">
+                        {card.eventName}
                     </div>
-                ))}
-            </div>
-
-
+                </div>
+            ))}
         </div>
     )
 }
