@@ -1,4 +1,3 @@
-import React from 'react'
 import { images } from '../../utils/image'
 import useFloatingBtn from '../../hooks/useFloatingBtn';
 
