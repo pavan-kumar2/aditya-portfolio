@@ -4,12 +4,15 @@
 import './App.css'
 import Header from './layouts/Header/Header'
 import { useSelector } from 'react-redux'
-import FloatingBtn from './components/FloatingBtn/FloatingBtn'
 import { Route, Routes } from 'react-router-dom'
 import Gallery from './pages/Gallery/Gallery'
 import MainLayoutWrapper from './pages/MainLayoutWrapper/MainLayoutWrapper'
 import Footer from './layouts/Footer/Footer'
 import GalleryView from './pages/GalleryView/GalleryView'
+import WhatsAppBtn from './components/WhatsAppBtn/WhatsAppBtn'
+import FullScreenBtn from './components/FullScreenBtn/FullScreenBtn'
+import HiddenBtn from './components/HiddenBtn/HiddenBtn'
+
 
 function App() {
 
@@ -19,7 +22,6 @@ function App() {
     <>
       {/* {overlay.isOpen && <Overlay />} */}
       <Header />
-      <FloatingBtn />
       <main>
         <Routes>
           <Route path='/' element={
@@ -30,7 +32,14 @@ function App() {
           <Route path='/gallery/:id/view' element={<GalleryView />} />
         </Routes>
       </main>
+
+
+      <WhatsAppBtn />
+      <FullScreenBtn />
+      <HiddenBtn />
       <Footer />
+
+
     </>
   )
 }
