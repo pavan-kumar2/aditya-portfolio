@@ -1,10 +1,6 @@
 import React from 'react'
 import useFloatingBtn from '../../hooks/useFloatingBtn';
-// import { images } from '../../utils/image';
-import './FullScreenBtn.css';
 
-
-// type Props = {}
 const BuTTON_SIZE = 40;
 
 const FullScreenBtn = () => {
