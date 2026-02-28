@@ -25,51 +25,6 @@ header {
   user-select: none;
 }
 
-/* UI Toggle Button - Always Visible */
-.ui-toggle-btn {
-  position: fixed;
-  bottom: 60px;
-  /* Just above Tooplate attribution */
-  right: 30px;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-  z-index: 10001;
-  /* Higher than header */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.ui-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
-}
-
-.ui-toggle-btn svg {
-  width: 18px;
-  height: 18px;
-  stroke: #fff;
-  stroke-width: 2;
-  fill: none;
-  transition: all 0.3s ease;
-}
-
-.ui-toggle-btn.ui-hidden {
-  animation: pulse 2s infinite;
-}
-
-.ui-toggle-btn.ui-hidden svg {
-  opacity: 0.5;
-}
-
 @keyframes pulse {
   0%,
   100% {
@@ -139,48 +94,6 @@ nav a:hover::before {
 
 nav a::after {
   display: none;
-}
-
-/* Fullscreen Button */
-.fullscreen-btn {
-  width: 42px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-  margin-left: 20px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.fullscreen-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: scale(1.08);
-}
-
-.fullscreen-btn svg {
-  width: 20px;
-  height: 20px;
-  stroke: #fff;
-  stroke-width: 2;
-  fill: none;
-  transition: transform 0.3s ease;
-}
-
-.fullscreen-btn.active {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.fullscreen-btn.active svg {
-  transform: scale(0.85);
 }
 
 /* Play/Pause Button */
@@ -1111,18 +1024,6 @@ nav a::after {
   .shape-2 {
     width: 90px;
     height: 90px;
-  }
-
-  .ui-toggle-btn {
-    bottom: 55px;
-    right: 20px;
-    width: 32px;
-    height: 32px;
-  }
-
-  .ui-toggle-btn svg {
-    width: 16px;
-    height: 16px;
   }
 
   .play-pause-btn {
